@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		488D59EE7C39CC11A286D426 /* Pods_60_debate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE57CE49E5EE1608271C138B /* Pods_60_debate.framework */; };
 		EF601B762779A28800FDA71A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF601B752779A28800FDA71A /* AppDelegate.swift */; };
 		EF601B782779A28800FDA71A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF601B772779A28800FDA71A /* SceneDelegate.swift */; };
 		EF601B7A2779A28800FDA71A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF601B792779A28800FDA71A /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CCD99C26E4EECBF85C29D54 /* Pods-60_debate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate.debug.xcconfig"; path = "Target Support Files/Pods-60_debate/Pods-60_debate.debug.xcconfig"; sourceTree = "<group>"; };
+		7560A7DB75F3A216F22405B5 /* Pods-60_debate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate.release.xcconfig"; path = "Target Support Files/Pods-60_debate/Pods-60_debate.release.xcconfig"; sourceTree = "<group>"; };
+		CE57CE49E5EE1608271C138B /* Pods_60_debate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_60_debate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF601B722779A28800FDA71A /* 60_debate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 60_debate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF601B752779A28800FDA71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF601B772779A28800FDA71A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488D59EE7C39CC11A286D426 /* Pods_60_debate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55091235D052FD2DD53FA15B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE57CE49E5EE1608271C138B /* Pods_60_debate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF67CCDA4C510D9887362704 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CCD99C26E4EECBF85C29D54 /* Pods-60_debate.debug.xcconfig */,
+				7560A7DB75F3A216F22405B5 /* Pods-60_debate.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EF601B692779A28800FDA71A = {
 			isa = PBXGroup;
 			children = (
 				EF601B742779A28800FDA71A /* 60_debate */,
 				EF601B732779A28800FDA71A /* Products */,
+				CF67CCDA4C510D9887362704 /* Pods */,
+				55091235D052FD2DD53FA15B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF601B862779A28900FDA71A /* Build configuration list for PBXNativeTarget "60_debate" */;
 			buildPhases = (
+				9E8E25DBE100D720FC2B4188 /* [CP] Check Pods Manifest.lock */,
 				EF601B6E2779A28800FDA71A /* Sources */,
 				EF601B6F2779A28800FDA71A /* Frameworks */,
 				EF601B702779A28800FDA71A /* Resources */,
+				80A64563013863B10F59A36C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80A64563013863B10F59A36C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-60_debate/Pods-60_debate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-60_debate/Pods-60_debate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-60_debate/Pods-60_debate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8E25DBE100D720FC2B4188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-60_debate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF601B6E2779A28800FDA71A /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		EF601B872779A28900FDA71A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CCD99C26E4EECBF85C29D54 /* Pods-60_debate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		EF601B882779A28900FDA71A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7560A7DB75F3A216F22405B5 /* Pods-60_debate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
