@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		56070A405AB43DAD4E791DD7 /* Pods_60_debate_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AFE6BAF7C463AAE6C8D5EE /* Pods_60_debate_iOS.framework */; };
-		7B26FB68277AB1060091B63E /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26FB67277AB1060091B63E /* Signin.storyboard */; };
 		7B26FB6A277AB1AF0091B63E /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26FB69277AB1AE0091B63E /* List.storyboard */; };
 		7B26FB6C277AB1D10091B63E /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26FB6B277AB1D10091B63E /* Chat.storyboard */; };
 		EF09E8D7277AA4BD00B8D8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09E8D6277AA4BD00B8D8BD /* AppDelegate.swift */; };
@@ -20,12 +19,12 @@
 		EFDDB44D277AB09800733EE6 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB44C277AB09800733EE6 /* SigninViewController.swift */; };
 		EFDDB44F277AB0AF00733EE6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB44E277AB0AF00733EE6 /* ChatViewController.swift */; };
 		EFDDB451277AB0BC00733EE6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB450277AB0BC00733EE6 /* ListViewController.swift */; };
+		EFFBF69E277AF96600A6F8BC /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFBF69D277AF96600A6F8BC /* Signin.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39BC3B7741196D59EDB609CF /* Pods-60_debate_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate_iOS.release.xcconfig"; path = "Target Support Files/Pods-60_debate_iOS/Pods-60_debate_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		41AFE6BAF7C463AAE6C8D5EE /* Pods_60_debate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_60_debate_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B26FB67277AB1060091B63E /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		7B26FB69277AB1AE0091B63E /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		7B26FB6B277AB1D10091B63E /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		EF09E8D3277AA4BD00B8D8BD /* 60_debate_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 60_debate_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +38,7 @@
 		EFDDB44C277AB09800733EE6 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		EFDDB44E277AB0AF00733EE6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		EFDDB450277AB0BC00733EE6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		EFFBF69D277AF96600A6F8BC /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		F3F0420C759F50C4B6F25614 /* Pods-60_debate_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate_iOS.debug.xcconfig"; path = "Target Support Files/Pods-60_debate_iOS/Pods-60_debate_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				EFDDB44C277AB09800733EE6 /* SigninViewController.swift */,
-				7B26FB67277AB1060091B63E /* Signin.storyboard */,
+				EFFBF69D277AF96600A6F8BC /* Signin.storyboard */,
 			);
 			path = Signin;
 			sourceTree = "<group>";
@@ -233,8 +233,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFFBF69E277AF96600A6F8BC /* Signin.storyboard in Resources */,
 				7B26FB6C277AB1D10091B63E /* Chat.storyboard in Resources */,
-				7B26FB68277AB1060091B63E /* Signin.storyboard in Resources */,
 				EF09E8E3277AA4BE00B8D8BD /* LaunchScreen.storyboard in Resources */,
 				7B26FB6A277AB1AF0091B63E /* List.storyboard in Resources */,
 				EF09E8E0277AA4BE00B8D8BD /* Assets.xcassets in Resources */,
@@ -444,7 +444,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "60분 토론";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +474,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "60분 토론";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

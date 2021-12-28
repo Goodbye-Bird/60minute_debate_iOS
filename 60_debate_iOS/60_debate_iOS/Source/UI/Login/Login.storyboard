@@ -11,18 +11,43 @@
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="_0_debate_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="_0_debate_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxT-tJ-xSA">
+                                <rect key="frame" x="174" y="448" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="moveToSignUpView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7ff-NQ-daO"/>
+                                    <segue destination="ohD-xO-hYT" kind="show" id="oq1-8T-f8Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="v4J-EK-Vl1"/>
+                    <connections>
+                        <outlet property="moveToSignUpView" destination="DxT-tJ-xSA" id="BJQ-9J-Umy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10" y="95"/>
+        </scene>
+        <!--Signin-->
+        <scene sceneID="2nJ-Gr-zuK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Signin" referencedIdentifier="Signin" id="ohD-xO-hYT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HCx-9j-vUa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkO-kk-hu0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-42"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rIA-VC-f9b">
