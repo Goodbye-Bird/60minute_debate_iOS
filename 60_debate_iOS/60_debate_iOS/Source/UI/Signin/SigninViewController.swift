@@ -5,4 +5,15 @@
 //  Created by 김상은 on 2021/12/28.
 //
 
-import Foundation
+
+import UIKit
+
+class SigninViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+}
