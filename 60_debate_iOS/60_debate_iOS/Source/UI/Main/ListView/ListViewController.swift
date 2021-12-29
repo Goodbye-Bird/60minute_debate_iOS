@@ -9,6 +9,8 @@ import UIKit
 
 class ListViewController: UITableViewController {
 
+    var debateList: [Debate] = []
+    
     @IBAction func addBarButtonAction(_ sender: UIBarButtonItem) {
         
     }
