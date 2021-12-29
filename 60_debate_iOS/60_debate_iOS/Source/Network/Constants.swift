@@ -9,5 +9,4 @@ import Foundation
 
 public struct Constants{
     static let SERVER_IP = "http://192.168.111.202:9090"
-    
 }

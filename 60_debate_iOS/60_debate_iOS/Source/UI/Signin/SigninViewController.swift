@@ -20,4 +20,7 @@ class SigninViewController: UIViewController {
         
         self.view.backgroundColor = .systemBackground
     }
+    @IBAction func TapRegisterButton(_ sender: UIButton) {
+        registerNetworking() 
+    }
 }
