@@ -28,6 +28,8 @@
 		EFE3C81C277C0770001734F2 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C807277C0770001734F2 /* RegisterModel.swift */; };
 		EFE3C81D277C0770001734F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C808277C0770001734F2 /* AppDelegate.swift */; };
 		EFE3C81E277C0770001734F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C809277C0770001734F2 /* SceneDelegate.swift */; };
+		EFE3C826277C1D04001734F2 /* RegisterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C825277C1D04001734F2 /* RegisterAPI.swift */; };
+		EFE3C828277C2277001734F2 /* APImanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C827277C2277001734F2 /* APImanager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		EFE3C808277C0770001734F2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFE3C809277C0770001734F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EFE3C823277C08B8001734F2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE3C825277C1D04001734F2 /* RegisterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAPI.swift; sourceTree = "<group>"; };
+		EFE3C827277C2277001734F2 /* APImanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APImanager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,8 @@
 			children = (
 				EFE3C804277C0770001734F2 /* Constants.swift */,
 				EFE3C805277C0770001734F2 /* LoginAPI.swift */,
+				EFE3C825277C1D04001734F2 /* RegisterAPI.swift */,
+				EFE3C827277C2277001734F2 /* APImanager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -341,6 +347,8 @@
 				EFE3C819277C0770001734F2 /* LoginViewController.swift in Sources */,
 				EFE3C810277C0770001734F2 /* SigninViewController.swift in Sources */,
 				EFE3C811277C0770001734F2 /* ChatViewController.swift in Sources */,
+				EFE3C826277C1D04001734F2 /* RegisterAPI.swift in Sources */,
+				EFE3C828277C2277001734F2 /* APImanager.swift in Sources */,
 				EFE3C813277C0770001734F2 /* ListViewController.swift in Sources */,
 				EFE3C81B277C0770001734F2 /* LoginAPI.swift in Sources */,
 				EFE3C81A277C0770001734F2 /* Constants.swift in Sources */,

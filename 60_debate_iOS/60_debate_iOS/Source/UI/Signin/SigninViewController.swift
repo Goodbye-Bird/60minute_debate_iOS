@@ -19,7 +19,5 @@ class SigninViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = .systemBackground
-        
-        print(Constants.SERVER_IP)
     }
 }

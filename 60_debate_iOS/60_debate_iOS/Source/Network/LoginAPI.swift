@@ -12,38 +12,14 @@ import KeychainAccess
 extension LoginViewController {
     
     func LoginNetworking() {
-        let loginURL = "\(Constants.SERVER_IP)/login"
-        var request = URLRequest(url: URL(string: loginURL)!)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.timeoutInterval = 5
-        
-        
-        guard let email = emailTextField.text,
-              let password = passwordTextField.text else { return }
-        
-        let params = [
-            "email": email,
-            "password": password
-        ]
-        
-//        var result1 = {
-//            AF.request(request).responseData { (response) in
-//                switch response.result{
-//                case .success(let data):
-//                    print("POST 성공")
-//                    let decoder = JSONDecoder()
-//                    let result = try.decoder.decode(LoginEmail.self, from: data)
-//                    print(data)
-//                    
-//                    do {
-//                        
-//                    }
-//                    
-//                }
-//            }
-//        }
-        
     }
+        
+        func test() {
+            let completion: ((Login?) -> Void) = { data in
+                
+            }
 
+            let parameters = ["email": emailTextField.text!, "password": passwordTextField.text!]
+            APImanager.doRequest("\(Constants.SERVER_IP)/auth/join", method: .post, parameters: parameters, completion: completion)
+        }
 }

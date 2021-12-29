@@ -6,14 +6,26 @@
 //
 
 import Foundation
+import HandyJSON
 
-struct LoginEmail: Codable {
+class TestModel {
+    var testVar1: String?
+    required init() {}
+}
+
+class Login: HandyJSON {
     var status: Int
     var error: String?
     var message: String?
 }
 
-struct LoginPassword: Codable {
+//struct Login: Codable {
+//    var status: Int
+//    var error: String?
+//    var message: String?
+//}
+
+struct Register: Codable {
     var status: Int
     var error: String?
     var message: String?
