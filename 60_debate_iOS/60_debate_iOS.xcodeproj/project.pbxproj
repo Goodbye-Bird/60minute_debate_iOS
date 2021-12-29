@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		56070A405AB43DAD4E791DD7 /* Pods_60_debate_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AFE6BAF7C463AAE6C8D5EE /* Pods_60_debate_iOS.framework */; };
-		7B26FB6A277AB1AF0091B63E /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26FB69277AB1AE0091B63E /* List.storyboard */; };
 		7B26FB6C277AB1D10091B63E /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26FB6B277AB1D10091B63E /* Chat.storyboard */; };
 		EF09E8D7277AA4BD00B8D8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09E8D6277AA4BD00B8D8BD /* AppDelegate.swift */; };
 		EF09E8D9277AA4BD00B8D8BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09E8D8277AA4BD00B8D8BD /* SceneDelegate.swift */; };
 		EF09E8E0277AA4BE00B8D8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF09E8DF277AA4BE00B8D8BD /* Assets.xcassets */; };
 		EF09E8E3277AA4BE00B8D8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF09E8E1277AA4BE00B8D8BD /* LaunchScreen.storyboard */; };
+		EF1C96AF277BF54100608CDD /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1C96AB277BF54000608CDD /* List.storyboard */; };
+		EF1C96B0277BF54100608CDD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1C96AC277BF54100608CDD /* ListViewController.swift */; };
+		EF1C96B1277BF54100608CDD /* DebateListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1C96AD277BF54100608CDD /* DebateListCell.swift */; };
+		EF1C96B2277BF54100608CDD /* DebateListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1C96AE277BF54100608CDD /* DebateListCell.xib */; };
 		EF4D7363277B23130037F88E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4D7362277B23130037F88E /* Constants.swift */; };
 		EF930654277AACE100A793D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF930652277AACE100A793D4 /* LoginViewController.swift */; };
 		EF930657277AAD0600A793D4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF930656277AAD0600A793D4 /* Login.storyboard */; };
@@ -21,14 +24,12 @@
 		EFB60AF3277BEBF40046B7B4 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB60AF2277BEBF40046B7B4 /* RegisterModel.swift */; };
 		EFDDB44D277AB09800733EE6 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB44C277AB09800733EE6 /* SigninViewController.swift */; };
 		EFDDB44F277AB0AF00733EE6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB44E277AB0AF00733EE6 /* ChatViewController.swift */; };
-		EFDDB451277AB0BC00733EE6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB450277AB0BC00733EE6 /* ListViewController.swift */; };
 		EFFBF69E277AF96600A6F8BC /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFBF69D277AF96600A6F8BC /* Signin.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39BC3B7741196D59EDB609CF /* Pods-60_debate_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate_iOS.release.xcconfig"; path = "Target Support Files/Pods-60_debate_iOS/Pods-60_debate_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		41AFE6BAF7C463AAE6C8D5EE /* Pods_60_debate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_60_debate_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B26FB69277AB1AE0091B63E /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		7B26FB6B277AB1D10091B63E /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		EF09E8D3277AA4BD00B8D8BD /* 60_debate_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 60_debate_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF09E8D6277AA4BD00B8D8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +37,10 @@
 		EF09E8DF277AA4BE00B8D8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF09E8E2277AA4BE00B8D8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF09E8E4277AA4BE00B8D8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF1C96AB277BF54000608CDD /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		EF1C96AC277BF54100608CDD /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		EF1C96AD277BF54100608CDD /* DebateListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebateListCell.swift; sourceTree = "<group>"; };
+		EF1C96AE277BF54100608CDD /* DebateListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebateListCell.xib; sourceTree = "<group>"; };
 		EF4D7362277B23130037F88E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EF930652277AACE100A793D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EF930656277AAD0600A793D4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -43,7 +48,6 @@
 		EFB60AF2277BEBF40046B7B4 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		EFDDB44C277AB09800733EE6 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		EFDDB44E277AB0AF00733EE6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		EFDDB450277AB0BC00733EE6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		EFFBF69D277AF96600A6F8BC /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		F3F0420C759F50C4B6F25614 /* Pods-60_debate_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate_iOS.debug.xcconfig"; path = "Target Support Files/Pods-60_debate_iOS/Pods-60_debate_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,8 +179,10 @@
 		EF930650277AAC6A00A793D4 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				EFDDB450277AB0BC00733EE6 /* ListViewController.swift */,
-				7B26FB69277AB1AE0091B63E /* List.storyboard */,
+				EF1C96AD277BF54100608CDD /* DebateListCell.swift */,
+				EF1C96AE277BF54100608CDD /* DebateListCell.xib */,
+				EF1C96AB277BF54000608CDD /* List.storyboard */,
+				EF1C96AC277BF54100608CDD /* ListViewController.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -261,9 +267,10 @@
 				EFFBF69E277AF96600A6F8BC /* Signin.storyboard in Resources */,
 				7B26FB6C277AB1D10091B63E /* Chat.storyboard in Resources */,
 				EF09E8E3277AA4BE00B8D8BD /* LaunchScreen.storyboard in Resources */,
-				7B26FB6A277AB1AF0091B63E /* List.storyboard in Resources */,
 				EF09E8E0277AA4BE00B8D8BD /* Assets.xcassets in Resources */,
+				EF1C96AF277BF54100608CDD /* List.storyboard in Resources */,
 				EF930657277AAD0600A793D4 /* Login.storyboard in Resources */,
+				EF1C96B2277BF54100608CDD /* DebateListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,10 +325,11 @@
 			files = (
 				EFDDB44D277AB09800733EE6 /* SigninViewController.swift in Sources */,
 				EF930654277AACE100A793D4 /* LoginViewController.swift in Sources */,
-				EFDDB451277AB0BC00733EE6 /* ListViewController.swift in Sources */,
 				EF09E8D7277AA4BD00B8D8BD /* AppDelegate.swift in Sources */,
 				EFB60AF0277BE30F0046B7B4 /* LoginAPI.swift in Sources */,
+				EF1C96B1277BF54100608CDD /* DebateListCell.swift in Sources */,
 				EFDDB44F277AB0AF00733EE6 /* ChatViewController.swift in Sources */,
+				EF1C96B0277BF54100608CDD /* ListViewController.swift in Sources */,
 				EF4D7363277B23130037F88E /* Constants.swift in Sources */,
 				EF09E8D9277AA4BD00B8D8BD /* SceneDelegate.swift in Sources */,
 				EFB60AF3277BEBF40046B7B4 /* RegisterModel.swift in Sources */,
