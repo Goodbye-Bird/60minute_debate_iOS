@@ -14,19 +14,8 @@ class TestModel {
 }
 
 class Login: HandyJSON {
-    var status: Int
+    var status: Int?
     var error: String?
     var message: String?
-}
-
-//struct Login: Codable {
-//    var status: Int
-//    var error: String?
-//    var message: String?
-//}
-
-struct Register: Codable {
-    var status: Int
-    var error: String?
-    var message: String?
+    required init() {}
 }

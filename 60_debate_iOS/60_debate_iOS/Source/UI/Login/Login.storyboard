@@ -63,16 +63,37 @@
                                     <constraint firstAttribute="width" constant="240" id="fQs-am-4HT"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzk-5S-inU">
+                                <rect key="frame" x="172" y="750" width="70" height="31"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="8pe-vC-e1g"/>
+                                    <constraint firstAttribute="height" constant="31" id="hVv-Ic-0hm"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그인"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushLoginButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fTZ-Eo-A7a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zsb-aI-P6k" secondAttribute="bottom" constant="30" id="BnM-9f-yl6"/>
+                            <constraint firstItem="Jzk-5S-inU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="J0b-U3-u4X"/>
                             <constraint firstItem="kj8-qZ-PKK" firstAttribute="top" secondItem="5Pp-QT-3Mg" secondAttribute="bottom" constant="110" id="PzJ-1J-6dG"/>
                             <constraint firstItem="zsb-aI-P6k" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ZoH-A3-iPz"/>
                             <constraint firstItem="kj8-qZ-PKK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ezr-Us-Zb2"/>
                             <constraint firstItem="kj8-qZ-PKK" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="gdq-yf-df3"/>
                             <constraint firstItem="5Pp-QT-3Mg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="w9y-Ua-cny"/>
+                            <constraint firstItem="zsb-aI-P6k" firstAttribute="top" secondItem="Jzk-5S-inU" secondAttribute="bottom" constant="20" id="yjv-fr-W05"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v4J-EK-Vl1"/>
@@ -110,10 +131,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q09-SG-YIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-784" y="94"/>
+            <point key="canvasLocation" x="-797" y="94"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

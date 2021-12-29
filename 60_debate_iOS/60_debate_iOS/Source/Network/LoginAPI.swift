@@ -12,14 +12,15 @@ import KeychainAccess
 extension LoginViewController {
     
     func LoginNetworking() {
+        test()
     }
         
         func test() {
             let completion: ((Login?) -> Void) = { data in
-                
+                debugPrint("😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀")
             }
 
             let parameters = ["email": emailTextField.text!, "password": passwordTextField.text!]
-            APImanager.doRequest("\(Constants.SERVER_IP)/auth/join", method: .post, parameters: parameters, completion: completion)
+            APImanager.doRequest("\(Constants.SERVER_IP)/auth/login", method: .post, parameters: parameters, completion: completion)
         }
 }
