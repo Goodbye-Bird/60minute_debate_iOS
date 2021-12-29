@@ -9,6 +9,8 @@ import UIKit
 
 class DebateListCell: UITableViewCell {
 
+    @IBOutlet weak var topicLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

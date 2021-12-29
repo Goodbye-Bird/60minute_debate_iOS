@@ -8,14 +8,16 @@
 import Foundation
 import Alamofire
 func getDebateData() {
-    let url = "http://192.168.111.202:9090"
-            AF.request(url,
-                       method: .get,
-                       parameters: nil,
-                       encoding: URLEncoding.default,
-                       headers: ["Content-Type":"application/json"])
-                .validate(statusCode: 200..<300)
-                .responseJSON { (json) in
-                    print(json)
-    }
+    let url = "\(Constants.SERVER_IP)/debate/notificate"
+    
+    
+        let completion: ((devate?) -> Void) = { data in
+            debugPrint("ㅗㅗㅗㅗㅗ")
+            debugPrint(data?.devates?[0].name)
+            
+        }
+
+        
+        APImanager.doRequest(url, method: .get, parameters: nil, completion: completion)
+    
 }
