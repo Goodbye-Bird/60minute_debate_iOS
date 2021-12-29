@@ -19,3 +19,10 @@ class Login: HandyJSON {
     var message: String?
     required init() {}
 }
+
+class Register: HandyJSON {
+    var status: Int?
+    var error: String?
+    var message: String?
+    required init() {}
+}
