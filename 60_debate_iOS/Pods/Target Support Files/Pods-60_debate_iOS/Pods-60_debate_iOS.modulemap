@@ -1,6 +1,0 @@
-framework module Pods_60_debate_iOS {
-  umbrella header "Pods-60_debate_iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
