@@ -7,17 +7,10 @@
 
 import Foundation
 import Alamofire
-func getDebateData() {
+func getDebateData(_ result: @escaping ((devate?) -> Void)) {
     let url = "\(Constants.SERVER_IP)/debate/notificate"
-    
-    
-        let completion: ((devate?) -> Void) = { data in
-            debugPrint("ㅗㅗㅗㅗㅗ")
-            debugPrint(data?.devates?[0].name)
-            
-        }
 
         
-        APImanager.doRequest(url, method: .get, parameters: nil, completion: completion)
+        APImanager.doRequest(url, method: .get, parameters: nil, completion: result)
     
 }
