@@ -28,6 +28,14 @@
                                 <buttonConfiguration key="configuration" style="gray" title="회원가입">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TapRegisterButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="294-Jp-4AY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7g-bK-4yA">
                                 <rect key="frame" x="57" y="310" width="29.5" height="21"/>
