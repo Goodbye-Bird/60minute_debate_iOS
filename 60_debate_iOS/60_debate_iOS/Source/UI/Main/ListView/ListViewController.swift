@@ -11,40 +11,52 @@ class ListViewController: UIViewController {
     
     @IBOutlet weak var debateListView: UITableView!
     
-    var debateList: [devate] = []
+    @IBOutlet weak var nowDebate: UILabel!
+    
+    var debateList: devate?
+    lazy var completion: ((devate?) -> Void) = { data in
+        self.debateList = data
+        self.debateListView.reloadData()
+        guard let nowTitle = self.debateList?.devates![0].room else {
+            let now = ""
+            return
+        }
+        self.nowDebate.text = "\(nowTitle)"
+    }
+    
     
     override func viewDidLoad() {
-         super.viewDidLoad()
-        getDebateData()
-        
+        super.viewDidLoad()
+        getDebateData(completion)
+        self.debateListView.reloadData()
     }
     
     @IBAction func addBarButton(_ sender: UIBarButtonItem) {
+        
     }
     
-
-
-    @IBOutlet weak var debateListView: UITableView!
-    
-    @IBAction func TabJoinDebateButton(_ sender: UIButton) {
-        
+    @IBAction func joinDebateButton(_ sender: UIButton) {
+        debugPrint("push join button")
     }
     
 }
 
 
-extension ListViewController: UITableViewDataSource{
+extension ListViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.debateList.count
+        return self.debateList?.devates!.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DebateListCell", for: indexPath) as? DebateListCell
-            
-        debugPrint(self.debateList[indexPath.row].devates?[0].room)
-        cell!.topicLabel.text = "\(self.debateList[0].devates?[indexPath.row].room)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "debateCell", for: indexPath)
+        guard let title = self.debateList!.devates![indexPath.row].room else {
+            cell.textLabel?.text = ""
+            return cell
+        }
+        cell.textLabel?.text = "\(title)"
         
-        return cell ?? UITableViewCell()
+        
+        return cell
     }
     
     

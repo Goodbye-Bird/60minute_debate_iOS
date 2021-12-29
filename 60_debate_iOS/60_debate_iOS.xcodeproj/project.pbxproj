@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BB37E43277C3D830028B342 /* Debate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB37E42277C3D830028B342 /* Debate.swift */; };
-		7BB37E45277C3E840028B342 /* getDebateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB37E44277C3E840028B342 /* getDebateList.swift */; };
 		8C812B3BB1FBEF03F77F8304 /* Pods_60_debate_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46CAAFE0E0A513F612E081B /* Pods_60_debate_iOS.framework */; };
+		EF235EAE277D2A2800758E6C /* Debate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF235EA9277D2A2800758E6C /* Debate.swift */; };
+		EF235EAF277D2A2800758E6C /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF235EAA277D2A2800758E6C /* List.storyboard */; };
+		EF235EB0277D2A2800758E6C /* addDebateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF235EAB277D2A2800758E6C /* addDebateViewController.swift */; };
+		EF235EB1277D2A2800758E6C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF235EAC277D2A2800758E6C /* ListViewController.swift */; };
+		EF235EB2277D2A2800758E6C /* getDebateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF235EAD277D2A2800758E6C /* getDebateList.swift */; };
 		EF5278E0277C79FE00E9A263 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5278DF277C79FE00E9A263 /* SocketManager.swift */; };
 		EF5278E3277C871500E9A263 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF5278E2277C871500E9A263 /* MessageKit */; };
 		EF5278F0277C939A00E9A263 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5278EE277C939A00E9A263 /* ChatTableViewCell.swift */; };
@@ -22,10 +25,6 @@
 		EFE3C810277C0770001734F2 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C7F5277C0770001734F2 /* SigninViewController.swift */; };
 		EFE3C811277C0770001734F2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C7F8277C0770001734F2 /* ChatViewController.swift */; };
 		EFE3C812277C0770001734F2 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C7F9277C0770001734F2 /* Chat.storyboard */; };
-		EFE3C813277C0770001734F2 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C7FB277C0770001734F2 /* ListViewController.swift */; };
-		EFE3C814277C0770001734F2 /* DebateListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C7FC277C0770001734F2 /* DebateListCell.swift */; };
-		EFE3C815277C0770001734F2 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C7FD277C0770001734F2 /* List.storyboard */; };
-		EFE3C816277C0770001734F2 /* DebateListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C7FE277C0770001734F2 /* DebateListCell.xib */; };
 		EFE3C817277C0770001734F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C800277C0770001734F2 /* Login.storyboard */; };
 		EFE3C819277C0770001734F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C802277C0770001734F2 /* LoginViewController.swift */; };
 		EFE3C81A277C0770001734F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C804277C0770001734F2 /* Constants.swift */; };
@@ -40,10 +39,13 @@
 /* Begin PBXFileReference section */
 		396216EA5368F84A77104BE6 /* Pods-60_debate_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate_iOS.debug.xcconfig"; path = "Target Support Files/Pods-60_debate_iOS/Pods-60_debate_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		60E340D7B86E9C67777884E3 /* Pods-60_debate_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate_iOS.release.xcconfig"; path = "Target Support Files/Pods-60_debate_iOS/Pods-60_debate_iOS.release.xcconfig"; sourceTree = "<group>"; };
-		7BB37E42277C3D830028B342 /* Debate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debate.swift; sourceTree = "<group>"; };
-		7BB37E44277C3E840028B342 /* getDebateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDebateList.swift; sourceTree = "<group>"; };
 		C46CAAFE0E0A513F612E081B /* Pods_60_debate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_60_debate_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF09E8D3277AA4BD00B8D8BD /* 60_debate_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 60_debate_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF235EA9277D2A2800758E6C /* Debate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debate.swift; sourceTree = "<group>"; };
+		EF235EAA277D2A2800758E6C /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		EF235EAB277D2A2800758E6C /* addDebateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addDebateViewController.swift; sourceTree = "<group>"; };
+		EF235EAC277D2A2800758E6C /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		EF235EAD277D2A2800758E6C /* getDebateList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getDebateList.swift; sourceTree = "<group>"; };
 		EF5278DF277C79FE00E9A263 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
 		EF5278EE277C939A00E9A263 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		EF5278EF277C939A00E9A263 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
@@ -55,10 +57,6 @@
 		EFE3C7F5277C0770001734F2 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		EFE3C7F8277C0770001734F2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		EFE3C7F9277C0770001734F2 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
-		EFE3C7FB277C0770001734F2 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		EFE3C7FC277C0770001734F2 /* DebateListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebateListCell.swift; sourceTree = "<group>"; };
-		EFE3C7FD277C0770001734F2 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
-		EFE3C7FE277C0770001734F2 /* DebateListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebateListCell.xib; sourceTree = "<group>"; };
 		EFE3C800277C0770001734F2 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EFE3C802277C0770001734F2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EFE3C804277C0770001734F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -202,12 +200,11 @@
 		EFE3C7FA277C0770001734F2 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				EFE3C7FB277C0770001734F2 /* ListViewController.swift */,
-				7BB37E42277C3D830028B342 /* Debate.swift */,
-				EFE3C7FC277C0770001734F2 /* DebateListCell.swift */,
-				EFE3C7FD277C0770001734F2 /* List.storyboard */,
-				EFE3C7FE277C0770001734F2 /* DebateListCell.xib */,
-				7BB37E44277C3E840028B342 /* getDebateList.swift */,
+				EF235EAB277D2A2800758E6C /* addDebateViewController.swift */,
+				EF235EA9277D2A2800758E6C /* Debate.swift */,
+				EF235EAD277D2A2800758E6C /* getDebateList.swift */,
+				EF235EAA277D2A2800758E6C /* List.storyboard */,
+				EF235EAC277D2A2800758E6C /* ListViewController.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -309,13 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE3C817277C0770001734F2 /* Login.storyboard in Resources */,
+				EF235EAF277D2A2800758E6C /* List.storyboard in Resources */,
 				EF5278F1277C939A00E9A263 /* ChatTableViewCell.xib in Resources */,
 				EFE3C80F277C0770001734F2 /* Signin.storyboard in Resources */,
 				EFE3C80B277C0770001734F2 /* Assets.xcassets in Resources */,
 				EFE3C80C277C0770001734F2 /* LaunchScreen.storyboard in Resources */,
 				EFE3C812277C0770001734F2 /* Chat.storyboard in Resources */,
-				EFE3C815277C0770001734F2 /* List.storyboard in Resources */,
-				EFE3C816277C0770001734F2 /* DebateListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,21 +364,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF235EB1277D2A2800758E6C /* ListViewController.swift in Sources */,
+				EF235EB2277D2A2800758E6C /* getDebateList.swift in Sources */,
 				EFE3C819277C0770001734F2 /* LoginViewController.swift in Sources */,
-				7BB37E45277C3E840028B342 /* getDebateList.swift in Sources */,
 				EFE3C810277C0770001734F2 /* SigninViewController.swift in Sources */,
 				EFE3C811277C0770001734F2 /* ChatViewController.swift in Sources */,
 				EF5278E0277C79FE00E9A263 /* SocketManager.swift in Sources */,
 				EF5278F0277C939A00E9A263 /* ChatTableViewCell.swift in Sources */,
+				EF235EB0277D2A2800758E6C /* addDebateViewController.swift in Sources */,
 				EFE3C826277C1D04001734F2 /* RegisterAPI.swift in Sources */,
 				EFE3C828277C2277001734F2 /* APIManager.swift in Sources */,
-				EFE3C813277C0770001734F2 /* ListViewController.swift in Sources */,
 				EFE3C81B277C0770001734F2 /* LoginAPI.swift in Sources */,
 				EFE3C81A277C0770001734F2 /* Constants.swift in Sources */,
 				EFE3C80E277C0770001734F2 /* ViewController.swift in Sources */,
+				EF235EAE277D2A2800758E6C /* Debate.swift in Sources */,
 				EFE3C81E277C0770001734F2 /* SceneDelegate.swift in Sources */,
-				7BB37E43277C3D830028B342 /* Debate.swift in Sources */,
-				EFE3C814277C0770001734F2 /* DebateListCell.swift in Sources */,
 				EFE3C81D277C0770001734F2 /* AppDelegate.swift in Sources */,
 				EFE3C81C277C0770001734F2 /* RegisterModel.swift in Sources */,
 				EFA81EC7277C58C8005DC9A5 /* UIWindow.swift in Sources */,
