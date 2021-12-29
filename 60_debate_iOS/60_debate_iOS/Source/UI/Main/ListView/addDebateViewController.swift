@@ -18,6 +18,13 @@ class addDateViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createPickerView()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            super.touchesBegan(touches, with: event)
+            
+            self.view.endEditing(true)
     }
     
     func createPickerView() {
@@ -26,9 +33,48 @@ class addDateViewController: UIViewController{
         pickerView.dataSource = self
         timeTextField.tintColor = .clear
         timeTextField.inputView = pickerView
+        
+        
+        let toolBar = UIToolbar()
+            toolBar.sizeToFit()
+        
+        
+        let btnDone = UIBarButtonItem(title: "확인", style: .done, target: self, action: #selector(onPickDone))
+            let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+            let btnCancel = UIBarButtonItem(title: "취소", style: .done, target: self, action: #selector(onPickCancel))
+            toolBar.setItems([btnCancel , space , btnDone], animated: true)
+            toolBar.isUserInteractionEnabled = true
+        
+        timeTextField.inputView = pickerView
+        timeTextField.inputAccessoryView = toolBar
+        
+    }
+    @objc func onPickDone() {
+        timeTextField.text = "\(selectNum)시"
+        
+        timeTextField.resignFirstResponder() /// 피커뷰 내림
+    }
+         
+    // 피커뷰 > 취소 클릭
+    @objc func onPickCancel() {
+        timeTextField.resignFirstResponder() /// 피커뷰 내림
     }
     
     
+    @IBAction func cornfirmDebateButton(_ sender: UIButton) {
+        debateNetworking()
+    }
+    
+}
+extension addDateViewController {
+    
+    func debateNetworking() {
+        let completion: ((resdebates?) -> Void) = { data in
+            debugPrint("ㅜㅜㅜㅜㅜ")
+        }
+        let para = ["name": nameTextField.text!, "room": topicTextField.text!, "time": "\(selectNum)"]
+        APImanager.doRequest("\(Constants.SERVER_IP)/debate/postdebate", method: .post, parameters: para, completion: completion)
+    }
 }
 
 extension addDateViewController: UIPickerViewDelegate, UIPickerViewDataSource {

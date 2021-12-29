@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q53-sQ-WyC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hxz-YS-BMz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -12,7 +12,7 @@
         <scene sceneID="29c-jh-aIN">
             <objects>
                 <navigationController id="Q53-sQ-WyC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VaI-vC-HIV">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="VaI-vC-HIV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -90,7 +90,7 @@
                         <barButtonItem key="rightBarButtonItem" title="add" image="plus" catalog="system" id="IuL-DJ-IhD">
                             <connections>
                                 <action selector="addBarButton:" destination="76Z-fu-PLU" id="ZCC-3S-99H"/>
-                                <segue destination="Hxz-YS-BMz" kind="push" id="n0w-rn-rvt"/>
+                                <segue destination="Hxz-YS-BMz" kind="push" id="bib-sG-7OG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -123,7 +123,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXx-lZ-6eR">
-                                <rect key="frame" x="131" y="631" width="152" height="41"/>
+                                <rect key="frame" x="131" y="630" width="152" height="41"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="jTk-iH-Ewx"/>
@@ -136,6 +136,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cornfirmDebateButton:" destination="Hxz-YS-BMz" eventType="touchUpInside" id="6FF-Me-KWn"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BXO-qq-SsG">
                                 <rect key="frame" x="132" y="208" width="150" height="34"/>
@@ -146,28 +149,24 @@
                         <viewLayoutGuide key="safeArea" id="EUv-hn-gZj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EUv-hn-gZj" firstAttribute="trailing" secondItem="pXx-lZ-6eR" secondAttribute="trailing" constant="131" id="1AS-q4-AkH"/>
-                            <constraint firstItem="pXx-lZ-6eR" firstAttribute="leading" secondItem="EUv-hn-gZj" secondAttribute="leading" constant="131" id="2ff-4n-VZv"/>
-                            <constraint firstItem="BXO-qq-SsG" firstAttribute="leading" secondItem="EUv-hn-gZj" secondAttribute="leading" constant="132" id="4Ev-ak-1YF"/>
-                            <constraint firstItem="pXx-lZ-6eR" firstAttribute="top" secondItem="zyQ-Ov-IXW" secondAttribute="bottom" constant="121" id="C87-qE-48p"/>
-                            <constraint firstItem="EUv-hn-gZj" firstAttribute="trailing" secondItem="BXO-qq-SsG" secondAttribute="trailing" constant="132" id="Oba-7n-APc"/>
-                            <constraint firstItem="zyQ-Ov-IXW" firstAttribute="top" secondItem="mbj-9B-W3F" secondAttribute="bottom" constant="100" id="XfK-Fy-u0o"/>
-                            <constraint firstItem="mbj-9B-W3F" firstAttribute="top" secondItem="BXO-qq-SsG" secondAttribute="bottom" constant="100" id="bY5-Zz-D2a"/>
-                            <constraint firstItem="EUv-hn-gZj" firstAttribute="bottom" secondItem="pXx-lZ-6eR" secondAttribute="bottom" constant="190" id="cEV-cs-a1r"/>
-                            <constraint firstItem="mbj-9B-W3F" firstAttribute="leading" secondItem="EUv-hn-gZj" secondAttribute="leading" constant="132" id="cQy-W2-KMz"/>
-                            <constraint firstItem="EUv-hn-gZj" firstAttribute="trailing" secondItem="mbj-9B-W3F" secondAttribute="trailing" constant="132" id="eMw-bi-8rV"/>
-                            <constraint firstItem="EUv-hn-gZj" firstAttribute="trailing" secondItem="zyQ-Ov-IXW" secondAttribute="trailing" constant="55" id="i4b-Iz-XSg"/>
-                            <constraint firstItem="zyQ-Ov-IXW" firstAttribute="leading" secondItem="EUv-hn-gZj" secondAttribute="leading" constant="55" id="lHg-mT-a8k"/>
-                            <constraint firstItem="BXO-qq-SsG" firstAttribute="top" secondItem="EUv-hn-gZj" secondAttribute="top" constant="120" id="m13-jo-pUl"/>
+                            <constraint firstItem="EUv-hn-gZj" firstAttribute="trailing" secondItem="pXx-lZ-6eR" secondAttribute="trailing" constant="131" id="9tC-OK-NHu"/>
+                            <constraint firstItem="EUv-hn-gZj" firstAttribute="trailing" secondItem="zyQ-Ov-IXW" secondAttribute="trailing" constant="55" id="Ajx-KS-tKU"/>
+                            <constraint firstItem="zyQ-Ov-IXW" firstAttribute="leading" secondItem="EUv-hn-gZj" secondAttribute="leading" constant="55" id="BYa-5z-Qyf"/>
+                            <constraint firstItem="EUv-hn-gZj" firstAttribute="trailing" secondItem="mbj-9B-W3F" secondAttribute="trailing" constant="132" id="FMB-zh-yiz"/>
+                            <constraint firstItem="BXO-qq-SsG" firstAttribute="top" secondItem="EUv-hn-gZj" secondAttribute="top" constant="120" id="H52-1b-aUB"/>
+                            <constraint firstItem="EUv-hn-gZj" firstAttribute="trailing" secondItem="BXO-qq-SsG" secondAttribute="trailing" constant="132" id="IiU-I9-EHY"/>
+                            <constraint firstItem="pXx-lZ-6eR" firstAttribute="leading" secondItem="EUv-hn-gZj" secondAttribute="leading" constant="131" id="L0K-0k-Idk"/>
+                            <constraint firstItem="pXx-lZ-6eR" firstAttribute="top" secondItem="zyQ-Ov-IXW" secondAttribute="bottom" constant="120" id="Mgl-Ei-gWN"/>
+                            <constraint firstItem="mbj-9B-W3F" firstAttribute="leading" secondItem="EUv-hn-gZj" secondAttribute="leading" constant="132" id="Qhd-XO-J0p"/>
+                            <constraint firstItem="zyQ-Ov-IXW" firstAttribute="top" secondItem="mbj-9B-W3F" secondAttribute="bottom" constant="100" id="eG6-IA-ehk"/>
+                            <constraint firstItem="mbj-9B-W3F" firstAttribute="top" secondItem="BXO-qq-SsG" secondAttribute="bottom" constant="100" id="hWu-3H-g9g"/>
+                            <constraint firstItem="BXO-qq-SsG" firstAttribute="leading" secondItem="EUv-hn-gZj" secondAttribute="leading" constant="132" id="ltJ-cf-i0v"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WeG-xo-KpH"/>
                     <connections>
-                        <outlet property="nameLable" destination="BXO-qq-SsG" id="eui-Yl-mHt"/>
                         <outlet property="nameTextField" destination="BXO-qq-SsG" id="Zun-hF-Mx6"/>
-                        <outlet property="timeLable" destination="mbj-9B-W3F" id="beK-Yb-nPB"/>
                         <outlet property="timeTextField" destination="mbj-9B-W3F" id="iXF-O7-fR4"/>
-                        <outlet property="topicLable" destination="zyQ-Ov-IXW" id="S4r-3a-z3f"/>
                         <outlet property="topicTextField" destination="zyQ-Ov-IXW" id="Nts-5T-9BP"/>
                     </connections>
                 </viewController>

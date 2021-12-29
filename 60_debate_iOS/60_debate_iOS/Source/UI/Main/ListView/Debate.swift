@@ -18,3 +18,11 @@ class Debates: HandyJSON {
     var room: Int?
     required init() {}
 }
+
+
+class resdebates: HandyJSON {
+    var name: String?
+    var room: Int?
+    var time: String?
+    required init() {}
+}
