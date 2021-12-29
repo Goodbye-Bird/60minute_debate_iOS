@@ -11,7 +11,8 @@
 		7B26FB68277AB1060091B63E /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26FB67277AB1060091B63E /* Signin.storyboard */; };
 		7B26FB6A277AB1AF0091B63E /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26FB69277AB1AE0091B63E /* List.storyboard */; };
 		7B26FB6C277AB1D10091B63E /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26FB6B277AB1D10091B63E /* Chat.storyboard */; };
-		7BF2B2A8277BEEBF007E6369 /* DebateListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2B2A7277BEEBF007E6369 /* DebateListCell.swift */; };
+		7BF2B2AB277BEFEA007E6369 /* DebateListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2B2A9277BEFEA007E6369 /* DebateListCell.swift */; };
+		7BF2B2AC277BEFEA007E6369 /* DebateListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BF2B2AA277BEFEA007E6369 /* DebateListCell.xib */; };
 		EF09E8D7277AA4BD00B8D8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09E8D6277AA4BD00B8D8BD /* AppDelegate.swift */; };
 		EF09E8D9277AA4BD00B8D8BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09E8D8277AA4BD00B8D8BD /* SceneDelegate.swift */; };
 		EF09E8E0277AA4BE00B8D8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF09E8DF277AA4BE00B8D8BD /* Assets.xcassets */; };
@@ -29,7 +30,8 @@
 		7B26FB67277AB1060091B63E /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		7B26FB69277AB1AE0091B63E /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		7B26FB6B277AB1D10091B63E /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
-		7BF2B2A7277BEEBF007E6369 /* DebateListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateListCell.swift; sourceTree = "<group>"; };
+		7BF2B2A9277BEFEA007E6369 /* DebateListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateListCell.swift; sourceTree = "<group>"; };
+		7BF2B2AA277BEFEA007E6369 /* DebateListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DebateListCell.xib; sourceTree = "<group>"; };
 		EF09E8D3277AA4BD00B8D8BD /* 60_debate_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 60_debate_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF09E8D6277AA4BD00B8D8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF09E8D8277AA4BD00B8D8BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,8 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				EFDDB450277AB0BC00733EE6 /* ListViewController.swift */,
+				7BF2B2A9277BEFEA007E6369 /* DebateListCell.swift */,
+				7BF2B2AA277BEFEA007E6369 /* DebateListCell.xib */,
 				7B26FB69277AB1AE0091B63E /* List.storyboard */,
-				7BF2B2A7277BEEBF007E6369 /* DebateListCell.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				7B26FB6A277AB1AF0091B63E /* List.storyboard in Resources */,
 				EF09E8E0277AA4BE00B8D8BD /* Assets.xcassets in Resources */,
 				EF930657277AAD0600A793D4 /* Login.storyboard in Resources */,
+				7BF2B2AC277BEFEA007E6369 /* DebateListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +304,7 @@
 				EF09E8D7277AA4BD00B8D8BD /* AppDelegate.swift in Sources */,
 				EFDDB44F277AB0AF00733EE6 /* ChatViewController.swift in Sources */,
 				EF09E8D9277AA4BD00B8D8BD /* SceneDelegate.swift in Sources */,
-				7BF2B2A8277BEEBF007E6369 /* DebateListCell.swift in Sources */,
+				7BF2B2AB277BEFEA007E6369 /* DebateListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
