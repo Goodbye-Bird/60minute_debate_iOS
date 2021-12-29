@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.5.0)
   - HandyJSON (5.0.2)
   - KeychainAccess (4.2.2)
   - Socket.IO-Client-Swift (15.2.0):
@@ -6,23 +7,26 @@ PODS:
   - Starscream (3.1.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.5)
   - HandyJSON
   - KeychainAccess
   - Socket.IO-Client-Swift (~> 15.2.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - HandyJSON
     - KeychainAccess
     - Socket.IO-Client-Swift
     - Starscream
 
 SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: 042e93913be9a6536fd1a0a9cda0d25d0b0c01ab
+PODFILE CHECKSUM: 7291603d107c4aaaa53044b46bf14032f6f8e1a2
 
 COCOAPODS: 1.11.2

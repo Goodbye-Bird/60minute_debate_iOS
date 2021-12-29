@@ -8,6 +8,6 @@
 import Foundation
 
 public struct Constants{
-    static let SERVER_IP = "http://172.16.6.139:5000"
+    static let SERVER_IP = "http://192.168.111.202:9090"
     
 }

@@ -27,5 +27,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func moveToSignUpView(_ sender: UIButton) {
     }
+    @IBAction func pushLoginButton(_ sender: UIButton) {
+        LoginNetworking()
+    }
     
 }

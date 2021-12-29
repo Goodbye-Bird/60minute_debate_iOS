@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BB37E43277C3D830028B342 /* Debate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB37E42277C3D830028B342 /* Debate.swift */; };
+    7BB37E43277C3D830028B342 /* Debate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB37E42277C3D830028B342 /* Debate.swift */; };
 		7BB37E45277C3E840028B342 /* getDebateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB37E44277C3E840028B342 /* getDebateList.swift */; };
 		7BB49BEE277C0EEF00504E6C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB49BED277C0EEF00504E6C /* Alamofire */; };
 		8C812B3BB1FBEF03F77F8304 /* Pods_60_debate_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46CAAFE0E0A513F612E081B /* Pods_60_debate_iOS.framework */; };
@@ -23,7 +23,6 @@
 		EFE3C815277C0770001734F2 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C7FD277C0770001734F2 /* List.storyboard */; };
 		EFE3C816277C0770001734F2 /* DebateListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C7FE277C0770001734F2 /* DebateListCell.xib */; };
 		EFE3C817277C0770001734F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C800277C0770001734F2 /* Login.storyboard */; };
-		EFE3C818277C0770001734F2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C801277C0770001734F2 /* LoginViewController.xib */; };
 		EFE3C819277C0770001734F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C802277C0770001734F2 /* LoginViewController.swift */; };
 		EFE3C81A277C0770001734F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C804277C0770001734F2 /* Constants.swift */; };
 		EFE3C81B277C0770001734F2 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C805277C0770001734F2 /* LoginAPI.swift */; };
@@ -53,7 +52,6 @@
 		EFE3C7FD277C0770001734F2 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		EFE3C7FE277C0770001734F2 /* DebateListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebateListCell.xib; sourceTree = "<group>"; };
 		EFE3C800277C0770001734F2 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		EFE3C801277C0770001734F2 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		EFE3C802277C0770001734F2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EFE3C804277C0770001734F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EFE3C805277C0770001734F2 /* LoginAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BB49BEE277C0EEF00504E6C /* Alamofire in Frameworks */,
 				8C812B3BB1FBEF03F77F8304 /* Pods_60_debate_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				EFE3C800277C0770001734F2 /* Login.storyboard */,
-				EFE3C801277C0770001734F2 /* LoginViewController.xib */,
 				EFE3C802277C0770001734F2 /* LoginViewController.swift */,
 			);
 			path = Login;
@@ -243,7 +239,6 @@
 			);
 			name = 60_debate_iOS;
 			packageProductDependencies = (
-				7BB49BED277C0EEF00504E6C /* Alamofire */,
 			);
 			productName = 60_debate_iOS;
 			productReference = EF09E8D3277AA4BD00B8D8BD /* 60_debate_iOS.app */;
@@ -297,7 +292,6 @@
 				EFE3C812277C0770001734F2 /* Chat.storyboard in Resources */,
 				EFE3C815277C0770001734F2 /* List.storyboard in Resources */,
 				EFE3C816277C0770001734F2 /* DebateListCell.xib in Resources */,
-				EFE3C818277C0770001734F2 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,9 +497,10 @@
 			baseConfigurationReference = 396216EA5368F84A77104BE6 /* Pods-60_debate_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8LAXQZ8BGC;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -516,6 +511,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,8 +519,9 @@
 				);
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "rlatkddms.60-debate-iOS.test";
+				PRODUCT_BUNDLE_IDENTIFIER = "rlatkddms.60-debate-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -537,9 +534,10 @@
 			baseConfigurationReference = 60E340D7B86E9C67777884E3 /* Pods-60_debate_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8LAXQZ8BGC;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -550,6 +548,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -557,8 +556,9 @@
 				);
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "rlatkddms.60-debate-iOS.test";
+				PRODUCT_BUNDLE_IDENTIFIER = "rlatkddms.60-debate-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -599,14 +599,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		7BB49BED277C0EEF00504E6C /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7BB49BEC277C0EEF00504E6C /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF09E8CB277AA4BD00B8D8BD /* Project object */;
 }
