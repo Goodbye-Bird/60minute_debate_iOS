@@ -27,22 +27,22 @@ extension LoginViewController {
             "password": password
         ]
         
-        var result1 = {
-            AF.request(request).responseData { (response) in
-                switch response.result{
-                case .success(let data):
-                    print("POST 성공")
-                    let decoder = JSONDecoder()
-                    let result = try.decoder.decode(LoginEmail.self, from: data)
-                    print(data)
-                    
-                    do {
-                        try self.
-                    }
-                    
-                }
-            }
-        }
+//        var result1 = {
+//            AF.request(request).responseData { (response) in
+//                switch response.result{
+//                case .success(let data):
+//                    print("POST 성공")
+//                    let decoder = JSONDecoder()
+//                    let result = try.decoder.decode(LoginEmail.self, from: data)
+//                    print(data)
+//                    
+//                    do {
+//                        
+//                    }
+//                    
+//                }
+//            }
+//        }
         
     }
 
