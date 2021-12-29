@@ -9,5 +9,6 @@ target '60_debate_iOS' do
  
   pod 'Alamofire', '~> 5.5'
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+  pod 'KeychainAccess'
 
 end

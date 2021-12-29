@@ -7,7 +7,7 @@
 
 import UIKit
 import Alamofire
-import 
+import KeychainAccess
 
 extension LoginViewController {
     
@@ -37,7 +37,7 @@ extension LoginViewController {
                     print(data)
                     
                     do {
-                        try self.self.
+                        try self.
                     }
                     
                 }
