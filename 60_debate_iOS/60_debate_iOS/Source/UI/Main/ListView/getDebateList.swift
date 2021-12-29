@@ -7,17 +7,21 @@
 
 import Foundation
 import Alamofire
-func getDebateData() {
-    let url = "\(Constants.SERVER_IP)/debate/notificate"
+
+extension ListViewController {
     
-    
+    func getDebateData() {
+        let url = "\(Constants.SERVER_IP)/debate/notificate"
+        
+        
         let completion: ((devate?) -> Void) = { data in
             debugPrint("ㅗㅗㅗㅗㅗ")
             debugPrint(data?.devates?[0].name)
-            
+            self.debateListView.reloadData()
         }
 
         
         APImanager.doRequest(url, method: .get, parameters: nil, completion: completion)
     
+    }
 }

@@ -8,19 +8,19 @@
 import UIKit
 
 class ListViewController: UIViewController {
-
+    
+    @IBOutlet weak var debateListView: UITableView!
+    
     var debateList: [devate] = []
     
     override func viewDidLoad() {
          super.viewDidLoad()
         getDebateData()
-        print()
+        
     }
     
     @IBAction func addBarButton(_ sender: UIBarButtonItem) {
     }
-    
-    @IBOutlet weak var debateListView: UITableView!
     
     
 }
@@ -33,9 +33,9 @@ extension ListViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DebateListCell", for: indexPath) as? DebateListCell
-        
+            
         debugPrint(self.debateList[indexPath.row].devates?[0].room)
-        cell!.topicLabel.text = "\(self.debateList[indexPath.row].devates?[0].room)"
+        cell!.topicLabel.text = "\(self.debateList[0].devates?[indexPath.row].room)"
         
         return cell ?? UITableViewCell()
     }
