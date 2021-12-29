@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+    7BB37E43277C3D830028B342 /* Debate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB37E42277C3D830028B342 /* Debate.swift */; };
+		7BB37E45277C3E840028B342 /* getDebateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB37E44277C3E840028B342 /* getDebateList.swift */; };
+		7BB49BEE277C0EEF00504E6C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB49BED277C0EEF00504E6C /* Alamofire */; };
 		8C812B3BB1FBEF03F77F8304 /* Pods_60_debate_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46CAAFE0E0A513F612E081B /* Pods_60_debate_iOS.framework */; };
 		EFE3C80B277C0770001734F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C7EC277C0770001734F2 /* Assets.xcassets */; };
 		EFE3C80C277C0770001734F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C7ED277C0770001734F2 /* LaunchScreen.storyboard */; };
@@ -33,6 +36,8 @@
 /* Begin PBXFileReference section */
 		396216EA5368F84A77104BE6 /* Pods-60_debate_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate_iOS.debug.xcconfig"; path = "Target Support Files/Pods-60_debate_iOS/Pods-60_debate_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		60E340D7B86E9C67777884E3 /* Pods-60_debate_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-60_debate_iOS.release.xcconfig"; path = "Target Support Files/Pods-60_debate_iOS/Pods-60_debate_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7BB37E42277C3D830028B342 /* Debate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debate.swift; sourceTree = "<group>"; };
+		7BB37E44277C3E840028B342 /* getDebateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDebateList.swift; sourceTree = "<group>"; };
 		C46CAAFE0E0A513F612E081B /* Pods_60_debate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_60_debate_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF09E8D3277AA4BD00B8D8BD /* 60_debate_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 60_debate_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE3C7EC277C0770001734F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -181,6 +186,8 @@
 				EFE3C7FC277C0770001734F2 /* DebateListCell.swift */,
 				EFE3C7FD277C0770001734F2 /* List.storyboard */,
 				EFE3C7FE277C0770001734F2 /* DebateListCell.xib */,
+				7BB37E42277C3D830028B342 /* Debate.swift */,
+				7BB37E44277C3E840028B342 /* getDebateList.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -338,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE3C819277C0770001734F2 /* LoginViewController.swift in Sources */,
+				7BB37E45277C3E840028B342 /* getDebateList.swift in Sources */,
 				EFE3C810277C0770001734F2 /* SigninViewController.swift in Sources */,
 				EFE3C811277C0770001734F2 /* ChatViewController.swift in Sources */,
 				EFE3C826277C1D04001734F2 /* RegisterAPI.swift in Sources */,
@@ -347,6 +355,7 @@
 				EFE3C81A277C0770001734F2 /* Constants.swift in Sources */,
 				EFE3C80E277C0770001734F2 /* ViewController.swift in Sources */,
 				EFE3C81E277C0770001734F2 /* SceneDelegate.swift in Sources */,
+				7BB37E43277C3D830028B342 /* Debate.swift in Sources */,
 				EFE3C814277C0770001734F2 /* DebateListCell.swift in Sources */,
 				EFE3C81D277C0770001734F2 /* AppDelegate.swift in Sources */,
 				EFE3C81C277C0770001734F2 /* RegisterModel.swift in Sources */,
