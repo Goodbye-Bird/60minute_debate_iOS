@@ -22,6 +22,13 @@ class ListViewController: UIViewController {
     @IBAction func addBarButton(_ sender: UIBarButtonItem) {
     }
     
+
+
+    @IBOutlet weak var debateListView: UITableView!
+    
+    @IBAction func TabJoinDebateButton(_ sender: UIButton) {
+        
+    }
     
 }
 
