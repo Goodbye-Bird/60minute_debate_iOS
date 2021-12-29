@@ -14,8 +14,10 @@
 		EF09E8D9277AA4BD00B8D8BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09E8D8277AA4BD00B8D8BD /* SceneDelegate.swift */; };
 		EF09E8E0277AA4BE00B8D8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF09E8DF277AA4BE00B8D8BD /* Assets.xcassets */; };
 		EF09E8E3277AA4BE00B8D8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF09E8E1277AA4BE00B8D8BD /* LaunchScreen.storyboard */; };
+		EF4D7363277B23130037F88E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4D7362277B23130037F88E /* Constants.swift */; };
 		EF930654277AACE100A793D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF930652277AACE100A793D4 /* LoginViewController.swift */; };
 		EF930657277AAD0600A793D4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF930656277AAD0600A793D4 /* Login.storyboard */; };
+		EFB60AF0277BE30F0046B7B4 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB60AEF277BE30F0046B7B4 /* LoginAPI.swift */; };
 		EFDDB44D277AB09800733EE6 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB44C277AB09800733EE6 /* SigninViewController.swift */; };
 		EFDDB44F277AB0AF00733EE6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB44E277AB0AF00733EE6 /* ChatViewController.swift */; };
 		EFDDB451277AB0BC00733EE6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDDB450277AB0BC00733EE6 /* ListViewController.swift */; };
@@ -33,8 +35,10 @@
 		EF09E8DF277AA4BE00B8D8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF09E8E2277AA4BE00B8D8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF09E8E4277AA4BE00B8D8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4D7362277B23130037F88E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EF930652277AACE100A793D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EF930656277AAD0600A793D4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		EFB60AEF277BE30F0046B7B4 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
 		EFDDB44C277AB09800733EE6 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		EFDDB44E277AB0AF00733EE6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		EFDDB450277AB0BC00733EE6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +102,15 @@
 			path = 60_debate_iOS;
 			sourceTree = "<group>";
 		};
+		EF4D735E277B0AF00037F88E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF4D7362277B23130037F88E /* Constants.swift */,
+				EFB60AEF277BE30F0046B7B4 /* LoginAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		EF93064A277AA92900A793D4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +126,7 @@
 			children = (
 				EF09E8D6277AA4BD00B8D8BD /* AppDelegate.swift */,
 				EF09E8D8277AA4BD00B8D8BD /* SceneDelegate.swift */,
+				EF4D735E277B0AF00037F88E /* Network */,
 				EF93064C277AA9F100A793D4 /* UI */,
 			);
 			path = Source;
@@ -295,7 +309,9 @@
 				EF930654277AACE100A793D4 /* LoginViewController.swift in Sources */,
 				EFDDB451277AB0BC00733EE6 /* ListViewController.swift in Sources */,
 				EF09E8D7277AA4BD00B8D8BD /* AppDelegate.swift in Sources */,
+				EFB60AF0277BE30F0046B7B4 /* LoginAPI.swift in Sources */,
 				EFDDB44F277AB0AF00733EE6 /* ChatViewController.swift in Sources */,
+				EF4D7363277B23130037F88E /* Constants.swift in Sources */,
 				EF09E8D9277AA4BD00B8D8BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +463,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +473,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -477,6 +494,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,7 +504,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
