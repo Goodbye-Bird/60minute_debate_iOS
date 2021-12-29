@@ -3,50 +3,103 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--오늘의 토론-->
-        <scene sceneID="7EO-uD-fUb">
+        <!--Navigation Controller-->
+        <scene sceneID="29c-jh-aIN">
             <objects>
-                <tableViewController id="aJg-k7-m7d" customClass="ListViewController" customModule="_0_debate_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="guL-tY-ShU">
+                <navigationController id="Q53-sQ-WyC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VaI-vC-HIV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="76Z-fu-PLU" kind="relationship" relationship="rootViewController" id="NIb-k7-MR0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3QN-0b-RyM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-758" y="143"/>
+        </scene>
+        <!--60분 토론-->
+        <scene sceneID="Arb-2m-CZY">
+            <objects>
+                <viewController storyboardIdentifier="List" id="76Z-fu-PLU" customClass="ListViewController" customModule="_0_debate_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wbh-UD-nfx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWM-bi-ECb">
+                                <rect key="frame" x="173.5" y="192" width="67" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="RGI-rf-i1N"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="TabJoinDebateButton:" destination="76Z-fu-PLU" eventType="touchUpInside" id="Xhh-bI-Gnu"/>
+                                    <segue destination="qNJ-jN-FeG" kind="push" id="vdN-6v-8Cj"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ae4-Lg-eRp">
+                                <rect key="frame" x="0.0" y="243" width="414" height="619"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZQq-NB-9o9" customClass="DebateListCell" customModule="_0_debate_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZQq-NB-9o9" id="UoN-wZ-P59">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg0-P5-ccS">
+                                <rect key="frame" x="183" y="128" width="48" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="tVo-Z3-YKb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u2R-wR-S6w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="b2O-Yi-FaD">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b2O-Yi-FaD" id="Vp3-DT-MOm">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="aJg-k7-m7d" id="0P4-f4-2yF"/>
-                            <outlet property="delegate" destination="aJg-k7-m7d" id="IIp-w1-0gQ"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="오늘의 토론" id="MOf-Cc-8gZ">
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="qk1-Ac-zN6">
+                        <constraints>
+                            <constraint firstItem="ae4-Lg-eRp" firstAttribute="leading" secondItem="u2R-wR-S6w" secondAttribute="leading" id="19o-tT-4yP"/>
+                            <constraint firstItem="bWM-bi-ECb" firstAttribute="top" secondItem="hg0-P5-ccS" secondAttribute="bottom" constant="40" id="4k3-aA-yH2"/>
+                            <constraint firstItem="hg0-P5-ccS" firstAttribute="top" secondItem="u2R-wR-S6w" secondAttribute="top" constant="40" id="Kqf-Rb-NUs"/>
+                            <constraint firstItem="u2R-wR-S6w" firstAttribute="bottom" secondItem="ae4-Lg-eRp" secondAttribute="bottom" id="SZx-IN-DIx"/>
+                            <constraint firstItem="hg0-P5-ccS" firstAttribute="centerX" secondItem="Wbh-UD-nfx" secondAttribute="centerX" id="enS-Hl-cHI"/>
+                            <constraint firstItem="bWM-bi-ECb" firstAttribute="centerX" secondItem="Wbh-UD-nfx" secondAttribute="centerX" id="lfG-1Z-Jrn"/>
+                            <constraint firstItem="u2R-wR-S6w" firstAttribute="trailing" secondItem="ae4-Lg-eRp" secondAttribute="trailing" id="mm6-cg-ysw"/>
+                            <constraint firstItem="ae4-Lg-eRp" firstAttribute="top" secondItem="bWM-bi-ECb" secondAttribute="bottom" constant="20" id="tkP-tk-IkZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="60분 토론" id="G2b-8I-UMp">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="IuL-DJ-IhD">
                             <connections>
-                                <action selector="addBarButtonAction:" destination="aJg-k7-m7d" id="fve-K5-jZc"/>
+                                <action selector="addBarButton:" destination="76Z-fu-PLU" id="ZCC-3S-99H"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addBarButton" destination="qk1-Ac-zN6" id="lA0-ch-T1a"/>
+                        <outlet property="debateListView" destination="ae4-Lg-eRp" id="QGA-u9-VT0"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3yM-6A-bFa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMw-Kv-wkV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="143"/>
+            <point key="canvasLocation" x="85.507246376811594" y="142.63392857142856"/>
         </scene>
         <!--Storyboard Reference-->
-        <scene sceneID="EAh-D0-yAV">
+      </scene>
+        <!--Storyboard Reference-->
+      <scene sceneID="EAh-D0-yAV">
             <objects>
                 <viewControllerPlaceholder id="3u9-Sn-iUo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8q-mN-O1i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -55,19 +108,14 @@
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="29c-jh-aIN">
+        <scene sceneID="noB-5N-eK0">
             <objects>
-                <navigationController id="Q53-sQ-WyC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="VaI-vC-HIV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="aJg-k7-m7d" kind="relationship" relationship="rootViewController" id="tkq-Ts-51D"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3QN-0b-RyM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="ChatView" id="qNJ-jN-FeG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ztD-2l-PHy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3F-jE-HFK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-758" y="143"/>
+            <point key="canvasLocation" x="788" y="143"/>
         </scene>
     </scenes>
     <resources>

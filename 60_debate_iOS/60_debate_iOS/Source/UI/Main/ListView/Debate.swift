@@ -6,9 +6,15 @@
 //
 
 import Foundation
+import HandyJSON
 
-struct Debate: Codable {
-    var topic: String
-    let date: Date
-    
+class devate: HandyJSON {
+    var devates: [Debates]?
+    required init() {}
+}
+
+class Debates: HandyJSON {
+    var name: String?
+    var room: Int?
+    required init() {}
 }
