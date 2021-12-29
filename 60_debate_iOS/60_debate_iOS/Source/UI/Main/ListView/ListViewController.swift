@@ -36,7 +36,7 @@ class ListViewController: UIViewController {
     }
     
     @IBAction func joinDebateButton(_ sender: UIButton) {
-        
+        debugPrint("push join button")
     }
     
 }
