@@ -10,6 +10,10 @@
 		7BB37E43277C3D830028B342 /* Debate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB37E42277C3D830028B342 /* Debate.swift */; };
 		7BB37E45277C3E840028B342 /* getDebateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB37E44277C3E840028B342 /* getDebateList.swift */; };
 		8C812B3BB1FBEF03F77F8304 /* Pods_60_debate_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46CAAFE0E0A513F612E081B /* Pods_60_debate_iOS.framework */; };
+		EF5278E0277C79FE00E9A263 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5278DF277C79FE00E9A263 /* SocketManager.swift */; };
+		EF5278E3277C871500E9A263 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF5278E2277C871500E9A263 /* MessageKit */; };
+		EF5278F0277C939A00E9A263 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5278EE277C939A00E9A263 /* ChatTableViewCell.swift */; };
+		EF5278F1277C939A00E9A263 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5278EF277C939A00E9A263 /* ChatTableViewCell.xib */; };
 		EFA81EC7277C58C8005DC9A5 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA81EC6277C58C8005DC9A5 /* UIWindow.swift */; };
 		EFE3C80B277C0770001734F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C7EC277C0770001734F2 /* Assets.xcassets */; };
 		EFE3C80C277C0770001734F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3C7ED277C0770001734F2 /* LaunchScreen.storyboard */; };
@@ -30,7 +34,7 @@
 		EFE3C81D277C0770001734F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C808277C0770001734F2 /* AppDelegate.swift */; };
 		EFE3C81E277C0770001734F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C809277C0770001734F2 /* SceneDelegate.swift */; };
 		EFE3C826277C1D04001734F2 /* RegisterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C825277C1D04001734F2 /* RegisterAPI.swift */; };
-		EFE3C828277C2277001734F2 /* APImanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C827277C2277001734F2 /* APImanager.swift */; };
+		EFE3C828277C2277001734F2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3C827277C2277001734F2 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,9 @@
 		7BB37E44277C3E840028B342 /* getDebateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDebateList.swift; sourceTree = "<group>"; };
 		C46CAAFE0E0A513F612E081B /* Pods_60_debate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_60_debate_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF09E8D3277AA4BD00B8D8BD /* 60_debate_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 60_debate_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5278DF277C79FE00E9A263 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		EF5278EE277C939A00E9A263 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		EF5278EF277C939A00E9A263 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		EFA81EC6277C58C8005DC9A5 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		EFE3C7EC277C0770001734F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE3C7EE277C0770001734F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +68,7 @@
 		EFE3C809277C0770001734F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EFE3C823277C08B8001734F2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFE3C825277C1D04001734F2 /* RegisterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAPI.swift; sourceTree = "<group>"; };
-		EFE3C827277C2277001734F2 /* APImanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APImanager.swift; sourceTree = "<group>"; };
+		EFE3C827277C2277001734F2 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C812B3BB1FBEF03F77F8304 /* Pods_60_debate_iOS.framework in Frameworks */,
+				EF5278E3277C871500E9A263 /* MessageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +193,8 @@
 			children = (
 				EFE3C7F8277C0770001734F2 /* ChatViewController.swift */,
 				EFE3C7F9277C0770001734F2 /* Chat.storyboard */,
+				EF5278EE277C939A00E9A263 /* ChatTableViewCell.swift */,
+				EF5278EF277C939A00E9A263 /* ChatTableViewCell.xib */,
 			);
 			path = ChatView;
 			sourceTree = "<group>";
@@ -217,7 +227,8 @@
 				EFE3C804277C0770001734F2 /* Constants.swift */,
 				EFE3C805277C0770001734F2 /* LoginAPI.swift */,
 				EFE3C825277C1D04001734F2 /* RegisterAPI.swift */,
-				EFE3C827277C2277001734F2 /* APImanager.swift */,
+				EFE3C827277C2277001734F2 /* APIManager.swift */,
+				EF5278DF277C79FE00E9A263 /* SocketManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -249,6 +260,7 @@
 			);
 			name = 60_debate_iOS;
 			packageProductDependencies = (
+				EF5278E2277C871500E9A263 /* MessageKit */,
 			);
 			productName = 60_debate_iOS;
 			productReference = EF09E8D3277AA4BD00B8D8BD /* 60_debate_iOS.app */;
@@ -280,6 +292,7 @@
 			mainGroup = EF09E8CA277AA4BD00B8D8BD;
 			packageReferences = (
 				7BB49BEC277C0EEF00504E6C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EF5278E1277C871500E9A263 /* XCRemoteSwiftPackageReference "MessageKit" */,
 			);
 			productRefGroup = EF09E8D4277AA4BD00B8D8BD /* Products */;
 			projectDirPath = "";
@@ -296,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE3C817277C0770001734F2 /* Login.storyboard in Resources */,
+				EF5278F1277C939A00E9A263 /* ChatTableViewCell.xib in Resources */,
 				EFE3C80F277C0770001734F2 /* Signin.storyboard in Resources */,
 				EFE3C80B277C0770001734F2 /* Assets.xcassets in Resources */,
 				EFE3C80C277C0770001734F2 /* LaunchScreen.storyboard in Resources */,
@@ -358,8 +372,10 @@
 				7BB37E45277C3E840028B342 /* getDebateList.swift in Sources */,
 				EFE3C810277C0770001734F2 /* SigninViewController.swift in Sources */,
 				EFE3C811277C0770001734F2 /* ChatViewController.swift in Sources */,
+				EF5278E0277C79FE00E9A263 /* SocketManager.swift in Sources */,
+				EF5278F0277C939A00E9A263 /* ChatTableViewCell.swift in Sources */,
 				EFE3C826277C1D04001734F2 /* RegisterAPI.swift in Sources */,
-				EFE3C828277C2277001734F2 /* APImanager.swift in Sources */,
+				EFE3C828277C2277001734F2 /* APIManager.swift in Sources */,
 				EFE3C813277C0770001734F2 /* ListViewController.swift in Sources */,
 				EFE3C81B277C0770001734F2 /* LoginAPI.swift in Sources */,
 				EFE3C81A277C0770001734F2 /* Constants.swift in Sources */,
@@ -609,7 +625,23 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		EF5278E1277C871500E9A263 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF5278E2277C871500E9A263 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF5278E1277C871500E9A263 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF09E8CB277AA4BD00B8D8BD /* Project object */;
 }

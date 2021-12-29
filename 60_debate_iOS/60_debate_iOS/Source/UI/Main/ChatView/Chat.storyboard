@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,9 +16,98 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hjg-2j-Eq2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="753"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="ChatListCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatListCell" rowHeight="87" id="4Qw-Jp-wx9" customClass="ChatTableViewCell" customModule="_0_debate_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="87"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Qw-Jp-wx9" id="KSD-qL-Vij">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4H-Ku-RiM">
+                                                    <rect key="frame" x="103" y="10" width="301" height="41"/>
+                                                    <color key="backgroundColor" name="collectionViewBackground"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVk-Vo-grV">
+                                                    <rect key="frame" x="30" y="56.5" width="39" height="20.5"/>
+                                                    <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.41427508499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LVk-Vo-grV" firstAttribute="leading" secondItem="KSD-qL-Vij" secondAttribute="leadingMargin" constant="10" id="HB7-X7-MOR"/>
+                                                <constraint firstAttribute="bottom" secondItem="LVk-Vo-grV" secondAttribute="bottom" constant="10" id="PVj-PZ-cij"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="LVk-Vo-grV" secondAttribute="trailing" constant="100" id="YqJ-3w-HV5"/>
+                                                <constraint firstItem="T4H-Ku-RiM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KSD-qL-Vij" secondAttribute="leading" constant="100" id="ZGB-9a-4oQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="T4H-Ku-RiM" secondAttribute="trailing" constant="10" id="hCf-ig-bAt"/>
+                                                <constraint firstItem="T4H-Ku-RiM" firstAttribute="top" secondItem="KSD-qL-Vij" secondAttribute="top" constant="10" id="lqr-Si-XQW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <viewLayoutGuide key="safeArea" id="jck-NR-bz8"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="chatLabel" destination="T4H-Ku-RiM" id="HOB-2B-9G0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACw-bm-UZx">
+                                <rect key="frame" x="24" y="810" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hO9-Yp-XTc"/>
+                                    <constraint firstAttribute="width" constant="300" id="pek-qt-Tqu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45a-U7-oVJ">
+                                <rect key="frame" x="340" y="800" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.33811649659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Bv-Co-JxC"/>
+                                    <constraint firstAttribute="width" constant="50" id="lYp-9S-U8Q"/>
+                                </constraints>
+                                <color key="tintColor" name="label"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="전송">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendMsgButtonClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Sbt-ZS-SKR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="45a-U7-oVJ" secondAttribute="bottom" constant="12" id="0Zx-vN-hh0"/>
+                            <constraint firstItem="Hjg-2j-Eq2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ENT-fI-Osy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Hjg-2j-Eq2" secondAttribute="bottom" constant="65" id="Zgn-gU-p5e"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Hjg-2j-Eq2" secondAttribute="trailing" id="ckf-f9-KG1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="45a-U7-oVJ" secondAttribute="trailing" constant="24" id="mUA-uF-Qdi"/>
+                            <constraint firstItem="ACw-bm-UZx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="oPl-Ns-uBQ"/>
+                            <constraint firstItem="Hjg-2j-Eq2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uyf-CN-lLq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ACw-bm-UZx" secondAttribute="bottom" constant="12" id="yKV-w6-qTH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ChatTableView" destination="Hjg-2j-Eq2" id="eUJ-23-hJC"/>
+                        <outlet property="textField" destination="ACw-bm-UZx" id="T6Z-of-qqK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -25,6 +115,12 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="collectionViewBackground">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="label">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
