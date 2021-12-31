@@ -17,7 +17,7 @@ class ListViewController: UIViewController {
     lazy var completion: ((devate?) -> Void) = { data in
         self.debateList = data
         self.debateListView.reloadData()
-        guard let nowTitle = self.debateList?.devates![0].room else {
+        guard let nowTitle = self.debateList?.devates?[0].room else {
             let now = ""
             return
         }
@@ -27,6 +27,7 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = false
         getDebateData(completion)
         self.debateListView.reloadData()
     }
@@ -44,7 +45,7 @@ class ListViewController: UIViewController {
 
 extension ListViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.debateList?.devates!.count ?? 0
+        return self.debateList?.devates?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

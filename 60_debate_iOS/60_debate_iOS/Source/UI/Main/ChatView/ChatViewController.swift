@@ -27,15 +27,15 @@ class ChatViewController: UIViewController, UITextViewDelegate {
         self.ChatTableView.delegate = self
         self.ChatTableView.dataSource = self
         
-        initGestureRecognizer()
-        registerForKeyboardNotifications()
+//        initGestureRecognizer()
+//        registerForKeyboardNotifications()
         
     }
     
     //뒤로가기시 소켓 종료
     override func viewWillDisappear(_ animated: Bool) {
         SocketIOManager.shared.closeConnection()
-        unregisterForKeyboardNotifications()
+//        unregisterForKeyboardNotifications()
     }
     
     //서버로부터 메시지 받을 때 채팅창 업데이트
